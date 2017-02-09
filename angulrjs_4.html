@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ScopeTest">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="show-scope-demo">
+        <div ng-controller="GreetCtrl">
+            Hello{{name}}!
+        </div>
+        <div ng-controller="ListCtrl">
+            <ol>
+                <li ng-repeat="name in names">
+                    {{name}} from {{department}}
+                </li>
+            </ol>
+        </div>
+    </div>
+</body>
+<script src="angular.min.js"></script>
+<script src="js/Scope1.js"></script>
+</html>

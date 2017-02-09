@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyCSSModule">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/NgClass.css">
+</head>
+<body>
+    <div ng-controller="HeaderController">
+        <div ng-class="{error:isError,warning:isWarning}">{{messageText}}</div>
+        <button ng-click='showError()'>Simulate Error</button>
+        <button ng-click="showWarning()">Simulate Warning</button>
+    </div>
+
+</body>
+<script src="angular.min.js"></script>
+<script src="js/NgClass.js"></script>
+</html>
